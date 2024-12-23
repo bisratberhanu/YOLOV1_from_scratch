@@ -46,7 +46,7 @@ class YOLOV1(nn.Module):
     
 
     def forward(self,x):
-        print("forward is being called here")
+        # print("forward is being called here")
         x = self.darknet(x)
         return self.fcs(torch.flatten(x,start_dim =1))
 
